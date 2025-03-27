@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44654af5-41c5-4e28-b5c3-c43e4443077c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/RestSpot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/places.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/wishes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/db_cnt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/models/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/models/models_tables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/req.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2usq38CGCMPTmgPY74DarIdIypm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44654af5-41c5-4e28-b5c3-c43e4443077c" name="Changes" comment="" />
+      <created>1743047427675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743047427675</updated>
+    </task>
+    <servers />
+  </component>
+</project>
