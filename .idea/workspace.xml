@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44654af5-41c5-4e28-b5c3-c43e4443077c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/RestSpot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/places.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/wishes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/crud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/db_cnt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/models/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/models/models_tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/req.txt" afterDir="false" />
+    <list default="true" id="44654af5-41c5-4e28-b5c3-c43e4443077c" name="Changes" comment="настройка подключения к бд и миграций, создание моделей таблиц">
+      <change afterPath="$PROJECT_DIR$/app/database/models/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/alembic/versions/01da377fa632_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/alembic/versions/c716cff38a5d_first_revision.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/places.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/places.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,24 +30,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2usq38CGCMPTmgPY74DarIdIypm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/database/models" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -79,6 +68,19 @@
       <option name="presentableId" value="Default" />
       <updated>1743047427675</updated>
     </task>
+    <task id="LOCAL-00001" summary="настройка подключения к бд и миграций, создание моделей таблиц">
+      <option name="closed" value="true" />
+      <created>1743069123861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743069123862</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="настройка подключения к бд и миграций, создание моделей таблиц" />
+    <option name="LAST_COMMIT_MESSAGE" value="настройка подключения к бд и миграций, создание моделей таблиц" />
   </component>
 </project>
