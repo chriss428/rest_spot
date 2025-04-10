@@ -1,5 +1,7 @@
 from fastapi import APIRouter
 from sqlalchemy import select
+from sqlalchemy.orm import joinedload
+
 from app.database.db_cnt import async_session_maker
 from app.database.models.models_tables import User
 
@@ -13,5 +15,10 @@ async def get_all_users():
         users = result.scalars().all()
         return users
 
-# @router.post("/create/", summary="Добавить нового пользователя")
-# async def create_user(user: )
+# @router.get("/{id}", summary="Получить пользователя по id")
+# async def get_all_users():
+#     async with async_session_maker() as session:
+#         query = select(User).options(joinedload())
+#         result = await session.execute(query)
+#         users = result.scalars().all()
+#         return users

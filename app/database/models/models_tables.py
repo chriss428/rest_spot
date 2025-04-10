@@ -2,15 +2,13 @@ from typing import List
 from sqlalchemy import ForeignKey, String
 from sqlalchemy.orm import relationship, Mapped, mapped_column
 from app.database.models.base import Base
-from datetime import date
+
 
 class User_Place(Base):
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"))
     place_id: Mapped[int] = mapped_column(ForeignKey("places.id"))
 
 class User(Base):
-    full_name: Mapped[str] = mapped_column(String(150))
-    date_of_birth: Mapped[date]
     email: Mapped[str] = mapped_column(String(50), unique=True)
     password: Mapped[str] = mapped_column(String(150), unique=True)
 
