@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 from sqlalchemy import select
 from app.database.db_cnt import async_session_maker
-from app.database.models.models_tables import Place
-from app.database.models.schemas import SPlaceAdd
+from app.places.model import Place
+from app.places.schema import SPlaceAdd
 
 router = APIRouter(prefix="/places", tags=["Места отдыха"])
 

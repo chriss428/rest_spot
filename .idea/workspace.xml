@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44654af5-41c5-4e28-b5c3-c43e4443077c" name="Changes" comment="настройка подключения к бд и миграций, создание моделей таблиц">
-      <change afterPath="$PROJECT_DIR$/app/authentication/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/places/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/places/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/places/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/users/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/users/schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/authentication/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/alembic/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/alembic/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/authentication/auth_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/places.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/places/places_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/users_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/wishes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/authentication/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/authentication/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/authentication/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/authentication/dependencies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/crud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/authentication/cshema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/base_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/models_tables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/schemas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +59,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/users" />
+      <recent name="$PROJECT_DIR$/app/database" />
+      <recent name="$PROJECT_DIR$/app/places" />
+      <recent name="$PROJECT_DIR$/app/wishes" />
       <recent name="$PROJECT_DIR$/app/database/models" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">

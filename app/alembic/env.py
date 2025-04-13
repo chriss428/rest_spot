@@ -13,8 +13,9 @@ from os.path import dirname, abspath
 sys.path.insert(0, dirname(dirname(abspath(__file__))))
 
 from app.database.db_cnt import DATABASE_URL
-from app.database.models.base import Base
-from app.database.models.models_tables import User, Place, User_Place
+from app.database.base_model import Base
+from app.users.model import User, UserPlaceAssoc
+from app.places.model import Place
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
