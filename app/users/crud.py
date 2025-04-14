@@ -1,7 +1,7 @@
 from sqlalchemy import select
+from sqlalchemy.orm import selectinload
 from app.database.db_cnt import async_session_maker
 from app.users.model import User
-from app.authentication.cshema import SUserRegister
 
 
 async def get_auth_user_or_none(email: str):
@@ -26,9 +26,9 @@ async def create_user(user_data: dict):
             session.commit()
             return new_user
 
-async def get_all_user():
+async def get_all_user_with_places():
     async with async_session_maker() as session:
-        query = select(User)
+        query = select(User).options(selectinload(User.wish_places))
         result = await session.execute(query)
         users = result.scalars().all()
         return users

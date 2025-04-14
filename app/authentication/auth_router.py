@@ -4,12 +4,13 @@ from app.authentication.auth import get_password_hash, authenticate_user, create
 from app.authentication.dependencies import get_current_user, get_current_admin_user
 from app.users.model import User
 from app.authentication.cshema import SUserRegister, SUserAuth
-from app.users.crud import get_auth_user_or_none, create_user, get_all_user
+from app.users.crud import get_auth_user_or_none, create_user
+from app.authentication.crud import get_me
 
 router = APIRouter(prefix='/auth', tags=['Регистрация/Аутентификация'])
 
 
-@router.post("/register/")
+@router.post("/register/", summary="Регистрация пользователя")
 async def register_user(user_data: SUserRegister):
     user = await get_auth_user_or_none(email=user_data.email)
     if user:
@@ -20,7 +21,7 @@ async def register_user(user_data: SUserRegister):
     return {'message': f'Вы успешно зарегистрированы!'}
 
 
-@router.post("/login/")
+@router.post("/login/", summary="Аутентификация пользователя")
 async def auth_user(response: Response, user_data: SUserAuth):
     check = await authenticate_user(email=user_data.email, password=user_data.password)
     if check is None:
@@ -30,17 +31,12 @@ async def auth_user(response: Response, user_data: SUserAuth):
     return {'ok': True, 'access_token': access_token, 'refresh_token': None, 'message': 'Авторизация успешна!'}
 
 
-@router.post("/logout/")
+@router.post("/logout/", summary="Выход из системы")
 async def logout_user(response: Response):
     response.delete_cookie(key="users_access_token")
     return {'message': 'Пользователь успешно вышел из системы'}
 
 
-@router.get("/me/")
+@router.get("/me/", summary="Получить данные о текущем пользователе")
 async def get_me(user_data: User = Depends(get_current_user)):
     return user_data
-
-
-@router.get("/all_users/")
-async def get_all_users(user_data: User = Depends(get_current_admin_user)):
-    return await get_all_user()
