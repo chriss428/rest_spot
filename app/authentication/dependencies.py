@@ -3,7 +3,7 @@ from jose import jwt, JWTError
 from datetime import datetime, timezone
 from app.core.config import get_auth_data
 from app.exceptions import TokenExpiredException, NoJwtException, NoUserIdException, ForbiddenException, TokenNoFound
-from app.users.crud import get_auth_user_or_none_by_id
+from app.authentication.crud import get_auth_user_or_none_by_id
 from app.users.model import User
 
 

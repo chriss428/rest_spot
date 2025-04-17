@@ -1,7 +1,7 @@
 from passlib.context import CryptContext
 from jose import jwt
 from datetime import datetime, timedelta, timezone
-from app.users.crud import get_auth_user_or_none
+from app.authentication.crud import get_auth_user_or_none
 
 
 from app.core.config import get_auth_data

@@ -1,13 +1,10 @@
-from fastapi import APIRouter, Response, Depends
+from fastapi import APIRouter, Response
 from app.exceptions import UserAlreadyExistsException, IncorrectEmailOrPasswordException
 from app.authentication.auth import get_password_hash, authenticate_user, create_access_token
-from app.authentication.dependencies import get_current_user, get_current_admin_user
-from app.users.model import User
 from app.authentication.cshema import SUserRegister, SUserAuth
-from app.users.crud import get_auth_user_or_none, create_user
-from app.authentication.crud import get_me
+from app.authentication.crud import create_user, get_auth_user_or_none
 
-router = APIRouter(prefix='/auth', tags=['Регистрация/Аутентификация'])
+router = APIRouter(prefix="/auth", tags=["Регистрация/Аутентификация"])
 
 
 @router.post("/register/", summary="Регистрация пользователя")
@@ -35,8 +32,3 @@ async def auth_user(response: Response, user_data: SUserAuth):
 async def logout_user(response: Response):
     response.delete_cookie(key="users_access_token")
     return {'message': 'Пользователь успешно вышел из системы'}
-
-
-@router.get("/me/", summary="Получить данные о текущем пользователе")
-async def get_me(user_data: User = Depends(get_current_user)):
-    return user_data
